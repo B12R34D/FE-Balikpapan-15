@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/data_analysis.css">
+    <link rel="stylesheet" href="css/question.css">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <title>Edu Class</title>
+</head>
+<body>
+     <!-----bagian navigasi----->
+     <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="assets/favicon.png">
+                <h1 class="navbar-logo">Edu Class</h1>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-menu"><a href="index.html#home-section" class="nav-link">Beranda</a></li>
+                <li class="nav-menu"><a href="index.html#about-section" class="nav-link">Tentang</a></li>
+                <li class="nav-menu"><a href="index.html#courses-section" class="nav-link">Kursus</a></li>
+                <li class="nav-menu"><a href="index.html#team-section" class="nav-link">Tim Kami</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-----navigasi responsive----->
+    <div class="hamburger-navigation">
+        <div class="navbar-logo">Edu Class</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-link">
+                <li class="nav-menu"><a href="index.html#home-section" onclick="toggleMenu()" class="nav-link">Beranda</a></li>
+                <li class="nav-menu"><a href="index.html#about-section" onclick="toggleMenu()" class="nav-link">Tentang</a></li>
+                <li class="nav-menu"><a href="index.html#courses-section" onclick="toggleMenu()" class="nav-link">Kursus</a></li>
+                <li class="nav-menu"><a href="index.html#team-section" onclick="toggleMenu()" class="nav-link">Tim Kami</a></li>
+            </div>
+        </div>
+    </div>
+    <!-----konten utama----->
+    <div class="main-container">
+        <div class="main-content">
+            <h1>Data Analysis</h1>  
+            <p>Data analytics adalah proses pengolahan, analisis, dan interpretasi data untuk mendapatkan wawasan atau informasi yang berguna.
+               Ini melibatkan penggunaan berbagai teknik statistik, matematika, dan pemrograman komputer untuk menggali pola, tren, dan hubungan dalam kumpulan data.<br>
+               Tujuan dari data analytics adalah untuk mendukung pengambilan keputusan yang lebih baik, mengidentifikasi peluang, dan memecahkan masalah yang kompleks. 
+               Ini dapat diterapkan di berbagai bidang, termasuk bisnis, ilmu pengetahuan, kesehatan, keuangan, pemasaran, dan banyak lagi.
+            </p>
+            <h1>Kurikulum</h1>
+            <div class="kurikulum">
+                <ol class="kurikulum-1">
+                    <li>Pengenalan Masalah yang akan di Analysis</li>
+                    <li>Pengecekan Kualitas Data</li>
+                    <li>Data Insights Part 1</li>
+                    <li>Data Insights Part 2</li>
+                    <li>Modelling: Train, Valid, and Test</li>
+                    <li>Modelling: Data Preprocessing I</li>
+                    <li>Modelling: Data Preprocessing II</li>
+                    <li>Modelling: Pemodelan</li>
+                    <li>Modelling: Conclusion</li>
+                </ol>
+            </div>
+             <!-----video yang ditampilkan beserta deskripsinya----->     
+            <div class="video-content">
+                <ul id="video-list"></ul>
+            </div>
+            <!----quiz beserta soal-soalnya----->
+            <div class="quiz-question">
+                <h1>Latihan Soal</h1>
+                <!----bagian button start----->
+                <div class="start-screen">
+                    <button id="start-button">Mulai Quiz</button>
+                </div>
+                <!-----Wadah untuk soal dan komponen-komponennya----->
+                <div id="wrapper">
+                    <div id="display-container">
+                        <div class="header">
+                            <div class="number-of-count">
+                                <span class="number-of-question"></span>
+                            </div>
+                            <div class="timer-div">
+                                <img src="assets/timer.png" />
+                                <span class="time-left"></span>
+                            </div>
+                        </div>
+                        <div id="container">
+                        <!-----pertanyaan dan jawaban akan ditampilkan disini----->
+                        </div>
+                        <div class="btn-container">
+                            <button id="next-button">Selanjutnya</button>
+                        </div>
+                    </div>
+                </div>
+                <!----bagian hasil dan tombol mulai ulang----->
+                <div class="score-container hide">
+                    <div id="user-score"></div>
+                    <button id="restart">Mulai Ulang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----bagian footer----->
+    <footer>
+        <p>Copyright &#169; 2023 Kelompok 15. All Rights Reserved.</p>
+    </footer>
+    <a href="#" class="to-top"><img src="assets/up-arrow.png" alt="" width="30px"  height="30px"></a>
+    <script src="js/script.js"></script>
+    <script src="js/DataQuestion.js"></script>
+</body>
+</html>
